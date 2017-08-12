@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div id="app" class="uk-container">
+      <h2>Example</h2>
+      <p>Jinja2: {{ message }}</p>
+      <p>Vue: [[ message ]]</p>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="static/node_modules/vue/dist/vue.min.js"></script>
+    <script src="static/node_modules/vue-resource/dist/vue-resource.min.js"></script>
+    <script>
+        var app = new Vue({
+          el: "#app",
+          delimiters: ["[[", "]]"],
+          data: {
+            message: "Hello Vue!"
+          }
+        });
+    </script>
+{% endblock %}

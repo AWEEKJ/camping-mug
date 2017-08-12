@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/site.scss.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/uikit/site.scss.css') }}" type="text/css">
+
+    <script src="static/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="static/node_modules/uikit/dist/js/uikit.min.js"></script>
+    <title>Camping Mug</title>
+</head>
+<body>
+    {# navigation #}
+    <div class="uk-position-relative">
+        <img src="../static/media/DSC02643.jpg" alt="">
+        <div class="uk-position-top">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="/" class="uk-navbar-item uk-logo">CAMPING-MUG</a>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="/photo">photo</a></li>
+                        <li class="uk"><a href="">category</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    {% block body %}{% endblock %}
+    {% block script %}{% endblock %}
+</body>
+</html>

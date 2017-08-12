@@ -1,0 +1,19 @@
+// site.scss
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight');
+
+// 1. Your custom variables and variable overwrites.
+
+$global-font-family: "Spoqa Han Sans", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$logo-font-family: 'Zilla Slab Highlight', cursive;
+$logo-font-size: 2rem;
+$logo-color: black;
+
+// 2. Import default variables and available mixins.
+@import "../../node_modules/uikit/src/scss/variables.scss";
+@import "../../node_modules/uikit/src/scss/mixins.scss";
+
+// 3. Your custom mixin overwrites.
+
+// 4. Import UIkit
+@import "../../node_modules/uikit/src/scss/uikit.scss";

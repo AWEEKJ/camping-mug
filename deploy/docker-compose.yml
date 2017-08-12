@@ -1,0 +1,8 @@
+web:
+  build: ..
+  environment:
+    - SERVER=REAL
+  ports:
+   - "5000:5000"
+  volumes:
+   - .:/camping-mug

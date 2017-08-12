@@ -1,0 +1,15 @@
+{
+  "name": "camping-mug",
+  "version": "1.0.0",
+  "repository": {
+    "url": "http://github.com/AWEEKJ/camping-mug",
+    "type": "git"
+  },
+  "author": "Hanju Jo <dev.hanju.jo@gmail.com>",
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "uikit": "^3.0.0-beta.27",
+    "vue": "^2.4.2",
+    "vue-resource": "^1.3.4"
+  }
+}
